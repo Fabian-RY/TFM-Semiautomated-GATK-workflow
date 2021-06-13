@@ -1,0 +1,55 @@
+---
+title: "Exome report"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+# Exome variant calling report
+
+```{r, results='asis'}
+library(knitr)
+library(vcfR)
+```
+
+## Quality Control
+
+Min length
+Max length
+Average length
+Min base quality
+Number of reads aligned
+
+```{r, echo=FALSE,results='asis'}
+#knitr::kable(ReadQC)
+```
+
+# Targeted info
+
+Num of regions
+Num of bases
+Average coverage
+
+```{r}
+knitr::kable(baminfo)
+```
+
+# Alignment
+
+Number base aligned
+Number reads aligned
+% reads aligned
+
+## Calling
+
+SNPs: Number, Ts/tv ratio, 
+indels: Number, Max lenght, min length, average length, 
+
+```{r}
+knitr::kable(callinginfo)
+```
+
+## Variants
+
+```{r}
+knitr::kable(variants)
+```
