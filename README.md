@@ -30,4 +30,3 @@ The GATK pipeline used to compare results with Dragen protocol. It depends on th
   - The reference genome to align the samples
   - The dbsnp vcf database to get the id
   - The clinvar vcf database to get the clinical relevant data.
-  - 
